@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "6056defa-2640-4a79-bd16-5f554f7e0186",
+		"name": "inisev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10266939"
+	},
+	"item": [
+		{
+			"name": "Save Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "inisev_base_url",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "this is test page",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is desc",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{inisev_base_url}}/api/websites/5/posts",
+					"host": [
+						"{{inisev_base_url}}"
+					],
+					"path": [
+						"api",
+						"websites",
+						"5",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "This is first title",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "This is descripiton",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Subsriber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "muditkashyap786@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{inisev_base_url}}/api/websites/6/subscribe",
+					"host": [
+						"{{inisev_base_url}}"
+					],
+					"path": [
+						"api",
+						"websites",
+						"6",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
