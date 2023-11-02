@@ -1,0 +1,3 @@
+/Applications/MAMP/bin/php/php8.2.0/bin/php artisan "app:send-email"
+
+php artisan db:seed --class=WebsiteSeeder
